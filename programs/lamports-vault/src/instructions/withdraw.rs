@@ -1,6 +1,6 @@
 use anchor_lang::prelude::*;
 
-use crate::{VAULT_SEED, VAULT_STATE_SEED, VaultState};
+use crate::{error::ErrorCode, VAULT_SEED, VAULT_STATE_SEED, VaultState};
 
 #[derive(Accounts)]
 pub struct Withdraw<'info> {
