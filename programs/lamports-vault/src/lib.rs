@@ -23,8 +23,8 @@ pub mod lamports_vault {
         deposit::deposit_lamports(ctx, amount)
     }
 
-    pub fn withdraw(ctx: Context<Withdraw>, amount: u64) -> Result<()> {
-        withdraw::withdraw_lamports(ctx, amount)
+    pub fn withdraw(ctx: Context<Withdraw>, amount: u64, max_withdraw: u64) -> Result<()> {
+        withdraw::withdraw_lamports(ctx, amount, max_withdraw)
     }
 
     pub fn close(ctx: Context<Close>) -> Result<()> {
